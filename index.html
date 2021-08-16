@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Etate</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+</head>
+
+<body>
+
+    <div id="main">
+        <!--Start header-->
+        <div id="header">
+            <div class="main-logo">
+                <img src="./public/img/Logo.png" alt="main-logo" />
+            </div>
+
+
+            <ul class="nav">
+                <li><a href="#">Nhà đất bán</a> </li>
+                <li><a href="#">Nhà đất cho thuê</a> </li>
+                <li><a href="#">Dự án</a> </li>
+                <li><a href="#">Dịch vụ khác</a> </li>
+                <li><a href="#">Tin tức</a> </li>
+                <li><a href="#">Liên hệ</a> </li>
+
+            </ul>
+
+            <ul class="nav-icon">
+                <li><a href="#"><img src="./public/img/BDS da luu.png" />
+                        <span>3</span>
+                    </a>
+
+                </li>
+                <li><a href="#"><img src="./public/img/Component 24 – 2.png" />
+                        <span>3</span>
+                    </a></li>
+            </ul>
+            <ul class="profile">
+                <li>
+                    <img src="./public//img/a1f0cf88b537b01ee12ea64660fc37d2.png" alt="user" />
+                </li>
+                <li class="profile-name">
+                    Minh Quyết
+                </li>
+                <li class="profile-srolldown">
+                    <a href="#"><img src="./public/img/Path 2041.png" alt="srolldown" /></a>
+                </li>
+            </ul>
+            <div class="button-upload">
+                <button>Đăng tin</button>
+            </div>
+        </div>
+        <!--End header-->
+        <!--Start Bander-->
+        <div id="bander">
+            <div class="search">
+                <div class="search-content">
+                   <div class="content-left" id = "demo" onclick="myFuncition(this,'content-right')">Nhà đất bán</div>
+                   <div class="content-right" onclick="myFuncition(this,'content-left')">Nhà đất cho thuê</div>
+
+                </div>
+                <div class="search-bottom">
+                    <ul class="filter-top">
+                        <li class="filter filter-top-one">
+                            <img src="public/img/house-search.png" alt="house-logo"/>
+                            <p>Loại nhà đất</p>
+                        </li>
+                        <li class="filter filter-top-one">
+                            <input type="text" placeholder="Tìm Kiếm địa điểm,khu vực" name="search"/>
+                        </li>
+                        <li class="filter filter-top-one">
+                            <button>Tìm kiếm</button>
+                        </li>
+
+                    </ul>
+                
+                </div>
+            </div>
+        </div>
+        <!--End Bander-->
+        <div id="product"></div>
+        <div id="location"></div>
+        <div id="project-hot"></div>
+        <div id="footer"></div>
+
+    </div>
+
+    <script>
+       myFuncition = (element,elementOther) =>{
+        element.style.color = '#000';
+        element.style.backgroundColor = "#fff";
+        var elementRight = document.getElementsByClassName(elementOther);
+        elementRight[0].style.color = "#fff";
+        elementRight[0].style.backgroundColor="rgba(0,0,0,0.25)";
+       }
+    </script>
+
+
+
+
+</body>
+
+</html>

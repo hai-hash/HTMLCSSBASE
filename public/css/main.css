@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:  Helvetica,Arial, sans-serif;
+}
+
+#header{
+    position: fixed;
+    height: 89px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+#header .main-logo{
+    margin-left : 20px;
+    margin-top : 19px;
+    display: inline-block;
+}
+#header .nav{
+    display: inline-block;
+    margin-left: 20px;
+    position: absolute;
+    top:24px;
+}
+#header .nav li{
+    display: inline-block;
+    padding: 11px 10px;
+    cursor: pointer;
+}
+#header .nav a{
+    text-decoration: none;
+    color: #000;
+
+}
+#header .nav-icon{
+    display: inline-block;
+    position: absolute;
+    top : 31px;
+    left : 900px;
+}
+#header .nav-icon li{
+    display: inline-block;
+    list-style-type: none;
+    padding : 0 19px;
+    cursor: pointer;
+    
+
+}
+#header .nav-icon li > a{
+    text-decoration: none;
+    position: relative;
+   
+}
+#header .nav-icon span{
+    background-color: red;
+    padding: 0 5px;
+    border-radius: 100%;
+    position: absolute;
+    top: -15px;
+    left: 13px;
+}
+
+#header .profile{
+    position: absolute;
+    display: inline-block;
+    right: 160px;
+    top: 26px;
+}
+
+#header .profile li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 2px;
+}
+
+#header .profile .profile-name{
+    position: relative;
+    top:-10px
+}
+#header .profile-srolldown{
+    position: relative;
+    top:-13px
+}
+
+#header .button-upload{
+    float: right;
+    margin-top: 27px;
+    margin-right: 26px;
+    padding: 10px;
+    border: 1px solid #11689B;
+    border-radius: 11%;
+}
+
+#header .button-upload:hover{
+    background-color: #11689B;
+    cursor: pointer;
+}
+
+#header .button-upload:hover button{
+    color: #fff;
+    cursor: pointer;
+}
+
+#header .button-upload button{
+    background: none;
+    border: none;
+    color: #11689B;
+}
+
+#bander{
+    padding-top: 27.45%;
+    margin-top: 89px;
+    background : url("/public/img/Header\ bg.jpg") top center / cover no-repeat;
+    position: relative;
+
+}
+#bander .search{
+    position: absolute;
+    width: 701px;
+    height: 108px;
+    background-color: rgba(0,0,0,0.5);
+    top: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bander .search .content-left,#bander .search .content-right{
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(0,0,0,0.25);
+    text-align: center;
+    padding: 8px 14px;
+    border-radius: 4%;
+    cursor: pointer;
+}
+#bander .search .search-bottom{
+    height: 100%;
+}
+#bander .search .filter-top{
+    height: 40px;
+    margin:8px;
+    border: 0.5px solid #707070;
+    background-color: #fff;
+    border-radius: 2%;
+    
+}
+
+#bander .search-bottom li{
+    display: inline-block;
+    list-style-type: none;
+    line-height: 32px;
+    padding-left: 14px;
+}
+#bander .search-bottom p{
+    display: inline-block;
+}
+
+#bander .search-bottom input{
+    width: 408px;
+    height: 32px;
+    border : none;
+}
+#bander .search-bottom input:focus-visible{
+    outline: none;
+}
+
+#bander .search-bottom button{
+    line-height: 39px;
+    background: #679B41;
+    width: 110.9px;
+    border:none
+}
+
